@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#5594e2"
+    android:background="#eaeaea"
     android:orientation="vertical"
     tools:context="com.example.mysmallapplication.LoginActivity">
 
@@ -14,15 +14,15 @@
         android:orientation="horizontal"
         android:layout_gravity="center_horizontal"
         android:gravity="center"
-        android:background="@color/white"
+        android:background="#5594e2"
         android:elevation="3dp"
         >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="登录12306"
-            android:textColor="#5594e2"
+            android:text="登录"
+            android:textColor="#ffffff"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -47,10 +47,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="12306"
+            android:layout_marginTop="8dp"
+            android:text="欢迎登录"
             android:textStyle="bold"
-            android:textSize="28sp"
-            android:textColor="#f8f8f8" />
+            android:textSize="25sp"
+            android:textColor="#000111" />
 
         <EditText
             android:id="@+id/editName"
@@ -80,10 +81,10 @@
             android:layout_gravity="center_horizontal"
             android:gravity="center"
             android:layout_marginTop="25dp"
-            android:background="@drawable/small_shape_circle"
+            android:background="@drawable/small_shape_circle2"
             android:text="登 录"
             android:textSize="16dp"
-            android:textColor="#528CEC"
+            android:textColor="#ffffff"
             />
 
         <LinearLayout
@@ -101,7 +102,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:text="自动登录"
-                android:textColor="#f8f8f8"
+                android:textColor="#878787"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.085"
@@ -118,7 +119,7 @@
                 android:layout_marginStart="45dp"
                 android:layout_marginTop="8dp"
                 android:text="记住密码"
-                android:textColor="#f8f8f8"
+                android:textColor="#878787"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.085"
@@ -138,7 +139,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="忘记密码？"
-        android:textColor="#eeeeee"
+        android:textColor="#878787"
         android:textSize="15dp"
         android:textStyle="bold"
         android:layout_marginLeft="35dp"
@@ -149,7 +150,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="新用户注册"
-        android:textColor="#eeeeee"
+        android:textColor="#878787"
         android:textSize="15dp"
         android:textStyle="bold"
         android:layout_marginLeft="145dp"

@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Animation;
+import android.view.animation.LinearInterpolator;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -66,35 +67,64 @@ public class SelectFragment1 extends Fragment {
         change.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String exchangeBuf;
+      /*          String exchangeBuf;
                 exchangeBuf = fromcity.getText().toString();
                 fromcity.setText(tocity.getText().toString());
-                tocity.setText(exchangeBuf);
-                /*TranslateAnimation animationfrom = new TranslateAnimation(0,425,0,0);
-                animationfrom.setDuration(1000);
-                animationfrom.setInterpolator(new AccelerateDecelerateInterpolator());
-                animationfrom.setAnimationListener(new Animation.AnimationListener() {
+                tocity.setText(exchangeBuf);*/
+      //移动动画效果
+                change.setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public void onAnimationStart(Animation animation) {
+                    public void onClick(View view) {
+                        strFrom = fromcity.getText().toString();
+                        strTo = tocity.getText().toString();
 
+                        TranslateAnimation animationfrom = new TranslateAnimation(0, 300, 0, 0);
+                        animationfrom.setDuration(1000);
+                        animationfrom.setInterpolator(new AccelerateDecelerateInterpolator());
+                        animationfrom.setAnimationListener(new Animation.AnimationListener() {
+                            @Override
+                            public void onAnimationStart(Animation animation) {
+
+                            }
+
+                            @Override
+                            public void onAnimationEnd(Animation animation) {
+                                tocity.setText(strFrom);
+                            }
+
+                            @Override
+                            public void onAnimationRepeat(Animation animation) {
+
+                            }
+                        });
+
+                        TranslateAnimation animationto = new TranslateAnimation(0, -300, 0, 0);
+                        animationto.setDuration(1000);
+                        animationto.setInterpolator(new AccelerateDecelerateInterpolator());
+                        animationto.setAnimationListener(new Animation.AnimationListener() {
+                            @Override
+                            public void onAnimationStart(Animation animation) {
+
+                            }
+
+                            @Override
+                            public void onAnimationEnd(Animation animation) {
+                                fromcity.setText(strTo);
+                            }
+
+                            @Override
+                            public void onAnimationRepeat(Animation animation) {
+
+                            }
+                        });
+                        fromcity.startAnimation(animationfrom);
+                        tocity.startAnimation(animationto);
                     }
-
-                    @Override
-                    public void onAnimationEnd(Animation animation) {
-                        String exchangeBuf;
-                        exchangeBuf = fromcity.getText().toString();
-                        fromcity.setText(tocity.getText().toString());
-                        tocity.setText(exchangeBuf);
-                    }
-
-                    @Override
-                    public void onAnimationRepeat(Animation animation) {
-
-                    }
-                });*/
+                });
 
             }
         });
+
 
         selectTime.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,7 +132,6 @@ public class SelectFragment1 extends Fragment {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
                 builder.setTitle("请选择时间段");
                 final String[] time = new String[]{"00:00-24:00","00:00-06:00","06:00-12:00","12:00-18:00","18:00-24:00"};
-
                 builder.setSingleChoiceItems(time,5, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which){
                                 picwhich = which;
