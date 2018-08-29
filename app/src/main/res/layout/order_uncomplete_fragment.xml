@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="未完成订单"
+            android:textColor="#040404"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+       </LinearLayout>
+
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="
+*温馨提示
+
+1. 订单信息在本网站保存期限为30日。
+
+2. 在本应用购票后，没有换取纸质车票的，可不晚于开车前30分钟在本网站办理改签、退票业务，或不晚于开车前48小时在本网站办理“变更到站”业务。
+
+3. 在本网站办理退票，只能逐次单张办理。
+
+4. 车票改签、变更到站均只能办理一次。已经改签或变更到站的车票不再办理改签；对已改签车票、团体票暂不提供“变更到站”服务。
+
+5. 退票、改签、变更到站后，如有应退票款，按购票时所使用的在线支付工具相关规定，将在规定时间内退还至原在线支付工具账户，请及时查询。如有疑问，请致电12360人工客服查询。
+
+6. 如需取消或查看车票快递状态，请点击“快递详情”。
+
+7. 退保或查看电子保单状态，请点击[乘意险]
+
+"
+            android:textColor="#000111"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+</LinearLayout>
