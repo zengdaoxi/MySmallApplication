@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,6 +32,13 @@ public class BookOrderActivity extends AppCompatActivity {
         YCityAdapter adapter = new YCityAdapter(BookOrderActivity.this, R.layout.ycity_item, cityList);
         ListView listView = findViewById(R.id.list_view);
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+             Intent intent = new Intent(BookOrderActivity.this,SureOrderActivity.class);
+             startActivity(intent);
+            }
+        });
     }
 
     private void initData() {

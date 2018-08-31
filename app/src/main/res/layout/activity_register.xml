@@ -94,7 +94,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="2px"
                     android:layout_above="@id/rg_tab_bar"
-                    android:background="@color/div_white" />
+                    android:background="@android:color/darker_gray" />
 
                 <TableRow>
 
@@ -123,7 +123,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="2px"
                     android:layout_above="@id/rg_tab_bar"
-                    android:background="#000000" />
+                    android:background="@android:color/darker_gray" />
 
                 <TableRow>
 
@@ -194,7 +194,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="2px"
                     android:layout_above="@id/rg_tab_bar"
-                    android:background="@color/div_white" />
+                    android:background="@android:color/darker_gray" />
 
                 <TableRow>
 
@@ -224,7 +224,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="2px"
                     android:layout_above="@id/rg_tab_bar"
-                    android:background="@color/div_white" />
+                    android:background="@android:color/darker_gray" />
 
                 <TableRow>
 
@@ -294,7 +294,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="2px"
                     android:layout_above="@id/rg_tab_bar"
-                    android:background="@color/div_white" />
+                    android:background="@android:color/darker_gray" />
 
                 <TableRow>
 

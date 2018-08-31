@@ -30,14 +30,12 @@ public class YCityAdapter extends ArrayAdapter {
     }
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        YCity fruit = (YCity) getItem(position); // 获取当前项的Fruit实例
+        YCity city = (YCity) getItem(position); // 获取当前项的Fruit实例
         View view = LayoutInflater.from(getContext()).inflate(resourceId, null);//实例化一个对象
-        //ImageView fruitImage = (ImageView) view.findViewById(R.id.fruit_image);//获取该布局内的图片视图
-        TextView fruitName = (TextView) view.findViewById(R.id.tvStartCity);//获取该布局内的文本视图
-        TextView fruitName2 = (TextView) view.findViewById(R.id.tvEndCity);//获取该布局内的文本视图
-        //fruitImage.setImageResource(fruit.getImageId());//为图片视图设置图片资源
-        fruitName.setText(fruit.getName());//为文本视图设置文本内容
-        fruitName2.setText(fruit.getName2());
+        TextView cityName = view.findViewById(R.id.tvStartCity);//获取该布局内的文本视图
+        TextView cityName2 = view.findViewById(R.id.tvEndCity);//获取该布局内的文本视图
+        cityName.setText(city.getName());//为文本视图设置文本内容
+        cityName2.setText(city.getName2());
         return view;
     }
 }

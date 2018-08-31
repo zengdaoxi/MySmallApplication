@@ -33,11 +33,10 @@ import java.util.List;
 public class SelectFragment1 extends Fragment {
 
     private TextView selectDate;
-    private ImageView change;
+    private ImageView change,addPeople;
     private TextView fromcity,tocity;
-    private TextView selectTime,loctype;
+    private TextView selectTime,loctype,addPeo;
     private Button btnSubmit;
-
     String strFrom;
     String strTo;
     private int picwhich = 0;
@@ -54,6 +53,8 @@ public class SelectFragment1 extends Fragment {
         tocity = view.findViewById(R.id.to);
         selectTime = view.findViewById(R.id.selectTime);
         loctype = view.findViewById(R.id.loctype);
+        addPeople = view.findViewById(R.id.addPeople);
+        addPeo = view.findViewById(R.id.addPeo);
 
         btnSubmit =view.findViewById(R.id.btnSubmit);
         btnSubmit.setOnClickListener(new View.OnClickListener() {
@@ -64,13 +65,25 @@ public class SelectFragment1 extends Fragment {
             }
         });
 
+        addPeople.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),SelectPeopleActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        addPeo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),SelectPeopleActivity.class);
+                startActivity(intent);
+            }
+        });
+
         change.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-      /*          String exchangeBuf;
-                exchangeBuf = fromcity.getText().toString();
-                fromcity.setText(tocity.getText().toString());
-                tocity.setText(exchangeBuf);*/
       //移动动画效果
                 change.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -79,7 +92,7 @@ public class SelectFragment1 extends Fragment {
                         strTo = tocity.getText().toString();
 
                         TranslateAnimation animationfrom = new TranslateAnimation(0, 300, 0, 0);
-                        animationfrom.setDuration(1000);
+                        animationfrom.setDuration(600);
                         animationfrom.setInterpolator(new AccelerateDecelerateInterpolator());
                         animationfrom.setAnimationListener(new Animation.AnimationListener() {
                             @Override
@@ -99,7 +112,7 @@ public class SelectFragment1 extends Fragment {
                         });
 
                         TranslateAnimation animationto = new TranslateAnimation(0, -300, 0, 0);
-                        animationto.setDuration(1000);
+                        animationto.setDuration(600);
                         animationto.setInterpolator(new AccelerateDecelerateInterpolator());
                         animationto.setAnimationListener(new Animation.AnimationListener() {
                             @Override
@@ -191,18 +204,15 @@ public class SelectFragment1 extends Fragment {
 
                 CityPicker.getInstance()
                         .setFragmentManager(getChildFragmentManager())
-               /* .enableAnimation(true)	//启用动画效果
-                        .setAnimationStyle(anim)*/	//自定义动画*/
                         .setLocatedCity(new LocatedCity("杭州", "浙江", "101210101"))
                         .setHotCities(hotCities)	//指定热门城市
                         .setOnPickListener(new OnPickListener() {
                             @Override
                             public void onPick(int position, City data) {
-                                Toast.makeText(getActivity().getApplicationContext(), data.getName(), Toast.LENGTH_SHORT).show();
-                                fromcity.setText(data.getName());
-                                /*Intent intent =getIntent();
-                                intent.putExtra("city",data.getName());
-                                setResult(RESULT_OK, intent);*/
+                               // Toast.makeText(getActivity().getApplicationContext(), data.getName(), Toast.LENGTH_SHORT).show();
+                                if(data!=null){
+                                    fromcity.setText(data.getName());
+                                }
                             }
 
                             @Override
@@ -234,18 +244,12 @@ public class SelectFragment1 extends Fragment {
 
                 CityPicker.getInstance()
                         .setFragmentManager(getChildFragmentManager())
-               /* .enableAnimation(true)	//启用动画效果
-                        .setAnimationStyle(anim)*/	//自定义动画*/
                         .setLocatedCity(new LocatedCity("杭州", "浙江", "101210101"))
                         .setHotCities(hotCities)	//指定热门城市
                         .setOnPickListener(new OnPickListener() {
                             @Override
                             public void onPick(int position, City data) {
-                                Toast.makeText(getActivity().getApplicationContext(), data.getName(), Toast.LENGTH_SHORT).show();
                                 tocity.setText(data.getName());
-                                /*Intent intent =getIntent();
-                                intent.putExtra("city",data.getName());
-                                setResult(RESULT_OK, intent);*/
                             }
 
                             @Override
@@ -283,19 +287,6 @@ public class SelectFragment1 extends Fragment {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == Activity.RESULT_OK) {
             switch (requestCode) {
-                case RequestCodeInfo.GETCITY:
-                    String city=data.getExtras().getString("city");
-                    if(city!= null) {
-                        tocity.setText(city);
-                    }
-                    break;
-                case RequestCodeInfo.FROMCITY:
-                    String city2 = data.getExtras().getString("city");
-                    if(city2!= null) {
-                        fromcity.setText(city2);
-                    }
-                    break;
-
                 case RequestCodeInfo.DATE:
                     String date = data.getExtras().getString("date");
                     if(date!= null) {

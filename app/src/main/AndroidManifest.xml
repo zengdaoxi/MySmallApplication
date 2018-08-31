@@ -22,11 +22,18 @@
             android:name=".LoginActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".MainPageActivity" android:theme="@style/DefaultCityPickerTheme"/>
+        <activity
+            android:name=".MainPageActivity"
+            android:theme="@style/DefaultCityPickerTheme" />
         <activity android:name=".DateActivity" />
         <activity android:name=".BookOrderActivity" />
         <activity android:name=".YueChe_Activity" />
         <activity android:name=".FindPasswordActivity" />
+        <activity android:name=".SureOrderActivity" />
+        <activity android:name=".PayActivity" />
+        <activity android:name=".PayCompleteActivity" />
+        <activity android:name=".SelectPeopleActivity" />
+        <activity android:name=".AddPeopleActivity"></activity>
     </application>
 
 </manifest>

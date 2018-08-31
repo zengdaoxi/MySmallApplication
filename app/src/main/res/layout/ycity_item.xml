@@ -10,11 +10,32 @@
         android:background="@android:color/darker_gray" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop = "8dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center_vertical"
+        android:background="@drawable/login_div_layout"
         android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvTrainNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="G809"
+            android:textSize="25sp"
+            android:textColor="#57a4f4"/>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/darker_gray" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -27,15 +48,19 @@
                 android:id="@+id/tvStartCity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="长沙"
-                android:textColor="@color/colorPrimary"
-                android:textSize="12sp" />
+                android:text="成都"
+                android:textColor="#000111"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tvStartTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="09:14" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商务：0张" />
         </LinearLayout>
 
         <LinearLayout
@@ -46,11 +71,7 @@
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tvTrainNum"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="G809" />
+
 
             <ImageView
                 android:layout_width="150dp"
@@ -63,12 +84,17 @@
                 android:layout_height="wrap_content"
                 android:text="8小时15分" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一等:299张" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
@@ -77,263 +103,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="杭州"
-                android:textColor="@color/colorPrimary"
-                android:textSize="12sp" />
+                android:textColor="#000111"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tvEndTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="23:50" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="二等:5张" />
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/darker_gray" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:id="@+id/linear0"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_horizontal|center_vertical"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="硬座" />
-
-                <TextView
-                    android:id="@+id/tvSeatType0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="5张" />
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/tvPrice0"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="$320"
-                android:textColor="@color/colorPrimary" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linear1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_horizontal|center_vertical"
-
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="软座" />
-
-                <TextView
-                    android:id="@+id/tvSeatType1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="5张" />
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/tvPrice1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="$320"
-                android:textColor="@color/colorPrimary" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linear2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_horizontal|center_vertical"
-
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="硬卧" />
-
-                <TextView
-                    android:id="@+id/tvSeatType2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="5张" />
-
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/tvPrice2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="$320"
-                android:textColor="@color/colorPrimary" />
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:id="@+id/linear3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_horizontal|center_vertical"
-
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="软卧" />
-
-                <TextView
-                    android:id="@+id/tvSeatType3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="5张" />
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/tvPrice3"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="$320"
-                android:textColor="@color/colorPrimary" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linear4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_horizontal|center_vertical"
-
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="一等座" />
-
-                <TextView
-                    android:id="@+id/tvSeatType4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="5张" />
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/tvPrice4"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="$320"
-                android:textColor="@color/colorPrimary" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linear5"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_horizontal|center_vertical"
-
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="二等座" />
-
-                <TextView
-                    android:id="@+id/tvSeatType5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="5张" />
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/tvPrice5"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="$320"
-                android:textColor="@color/colorPrimary" />
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/darker_gray" />
 </LinearLayout>

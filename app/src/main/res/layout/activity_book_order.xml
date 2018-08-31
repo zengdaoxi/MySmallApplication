@@ -14,7 +14,7 @@ android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:background="#5594e2"
+        android:background="#57a4f4"
         android:elevation="3dp"
         >
 
@@ -46,8 +46,17 @@ android:layout_height="match_parent"
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:background="#3576ff"
+            android:background="#5daaff"
             android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="前一天"
+                android:textColor="#f5f5f5"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/tvDate"
                 android:layout_width="wrap_content"
