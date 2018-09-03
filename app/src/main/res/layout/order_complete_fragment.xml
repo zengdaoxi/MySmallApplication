@@ -35,10 +35,11 @@
 </LinearLayout>
 
     <View
-        android:id="@+id/view1"
+        android:id="@+id/div_tab_bar1"
         android:layout_width="match_parent"
         android:layout_height="2px"
-        android:background="@color/div_white" />
+        android:layout_above="@id/rg_tab_bar"
+        android:background="@android:color/darker_gray"/>
 
 
 
@@ -69,11 +70,11 @@
     </LinearLayout>
 
     <View
-        android:id="@+id/view2"
+        android:id="@+id/div_tab_bar2"
         android:layout_width="match_parent"
         android:layout_height="2px"
         android:layout_above="@id/rg_tab_bar"
-        android:background="@color/div_white" />
+        android:background="@android:color/darker_gray"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -101,11 +102,11 @@
     </LinearLayout>
 
     <View
-        android:id="@+id/view3"
+        android:id="@+id/div_tab_bar4"
         android:layout_width="match_parent"
         android:layout_height="2px"
         android:layout_above="@id/rg_tab_bar"
-        android:background="@color/div_white" />
+        android:background="@android:color/darker_gray"/>
 
 </LinearLayout>
 

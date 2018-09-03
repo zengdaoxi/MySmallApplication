@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:fitsSystemWindows="true"
-    android:background="#ffffff"
     >
 
     <LinearLayout
@@ -45,13 +44,8 @@
 
     <DatePicker
         android:id="@+id/datepicker"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="30dp"
-        android:layout_marginLeft="20dp"
-        android:background="@android:color/background_light"
-        android:calendarTextColor="@android:color/background_light"
-        android:calendarViewShown="true"
-        android:dayOfWeekBackground="@android:color/background_light"
-        android:headerBackground="@android:color/background_light"></DatePicker>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+></DatePicker>
 </LinearLayout>

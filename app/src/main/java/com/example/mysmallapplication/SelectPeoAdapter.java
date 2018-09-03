@@ -81,6 +81,23 @@ public class SelectPeoAdapter extends BaseAdapter {
         TextView tvnum;
         TextView tvpiao;
     }
+
+    public TextView getTv() {
+        return tv;
+    }
+
+    public TextView getTvnum() {
+        return tvnum;
+    }
+
+    public TextView getTvpiao() {
+        return tvpiao;
+    }
+
+    public CheckBox getCb() {
+
+        return cb;
+    }
 }
 
 

@@ -92,8 +92,8 @@ public class LoginActivity extends AppCompatActivity {
         textViewFindPrd.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View view){
-                Intent intent = new Intent(LoginActivity.this,FindPasswordActivity.class);
-                startActivity(intent);
+                /*Intent intent = new Intent(LoginActivity.this,FindPasswordActivity.class);
+                startActivity(intent);*/
             }
         });
 

@@ -64,10 +64,11 @@
                 </LinearLayout>
 
                 <View
-                    android:id="@+id/view1"
+                    android:id="@+id/div_tab_bar"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:background="#000000" />
+                    android:layout_above="@id/rg_tab_bar"
+                    android:background="@android:color/darker_gray"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -94,10 +95,11 @@
                 </LinearLayout>
 
                 <View
-                    android:id="@+id/view2"
+                    android:id="@+id/div_tab_bar1"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:background="#000000" />
+                    android:layout_above="@id/rg_tab_bar"
+                    android:background="@android:color/darker_gray"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -124,10 +126,11 @@
                 </LinearLayout>
 
                 <View
-                    android:id="@+id/view3"
+                    android:id="@+id/div_tab_bar2"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:background="#000000" />
+                    android:layout_above="@id/rg_tab_bar"
+                    android:background="@android:color/darker_gray"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -154,10 +157,11 @@
                 </LinearLayout>
 
                 <View
-                    android:id="@+id/view4"
+                    android:id="@+id/div_tab_bar4"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:background="#000000" />
+                    android:layout_above="@id/rg_tab_bar"
+                    android:background="@android:color/darker_gray"/>
             </LinearLayout>
 
             <LinearLayout
@@ -192,10 +196,11 @@
                 </LinearLayout>
 
                 <View
-                    android:id="@+id/view5"
+                    android:id="@+id/div_tab_bar6"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:background="#000000" />
+                    android:layout_above="@id/rg_tab_bar"
+                    android:background="@android:color/darker_gray"/>
 
             </LinearLayout>
 
@@ -231,11 +236,11 @@
                 </LinearLayout>
 
                 <View
-                    android:id="@+id/view6"
+                    android:id="@+id/div_tab_bar7"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:background="#000000" />
-
+                    android:layout_above="@id/rg_tab_bar"
+                    android:background="@android:color/darker_gray"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -264,10 +269,11 @@
                 </LinearLayout>
 
                 <View
-                    android:id="@+id/view7"
+                    android:id="@+id/div_tab_bar8"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:background="#000000" />
+                    android:layout_above="@id/rg_tab_bar"
+                    android:background="@android:color/darker_gray"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -296,10 +302,11 @@
                 </LinearLayout>
 
                 <View
-                    android:id="@+id/view8"
+                    android:id="@+id/div_tab_bar44"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:background="#000000" />
+                    android:layout_above="@id/rg_tab_bar"
+                    android:background="@android:color/darker_gray"/>
             </LinearLayout>
 
             <LinearLayout
@@ -334,10 +341,11 @@
                 </LinearLayout>
 
                 <View
-                    android:id="@+id/view9"
+                    android:id="@+id/div_tab_bar67"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:background="#000000" />
+                    android:layout_above="@id/rg_tab_bar"
+                    android:background="@android:color/darker_gray"/>
 
             </LinearLayout>
 
@@ -375,10 +383,11 @@
                 </LinearLayout>
 
                 <View
-                    android:id="@+id/view10"
+                    android:id="@+id/div_tab_bar87"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:background="#000000" />
+                    android:layout_above="@id/rg_tab_bar"
+                    android:background="@android:color/darker_gray"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -405,10 +414,11 @@
                 </LinearLayout>
 
                 <View
-                    android:id="@+id/view11"
+                    android:id="@+id/div_tab_bar11"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:background="#000000" />
+                    android:layout_above="@id/rg_tab_bar"
+                    android:background="@android:color/darker_gray"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -436,10 +446,11 @@
                 </LinearLayout>
 
                 <View
-                    android:id="@+id/view12"
+                    android:id="@+id/div_tab_bar44"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
-                    android:background="#000000" />
+                    android:layout_above="@id/rg_tab_bar"
+                    android:background="@android:color/darker_gray"/>
 
             </LinearLayout>
             <Button

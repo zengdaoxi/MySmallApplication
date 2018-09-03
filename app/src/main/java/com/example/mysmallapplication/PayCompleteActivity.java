@@ -1,11 +1,16 @@
 package com.example.mysmallapplication;
 
 import android.content.Intent;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import java.util.AbstractQueue;
 
 public class PayCompleteActivity extends AppCompatActivity {
 
@@ -29,17 +34,20 @@ public class PayCompleteActivity extends AppCompatActivity {
         readorder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PayCompleteActivity.this,OrderFragment3.class);
-                startActivity(intent);
+                
             }
         });
 
         btnReSt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PayCompleteActivity.this,SelectFragment1.class);
-                startActivity(intent);
+                Intent mintent = new Intent(PayCompleteActivity.this, ShowBigFragmentActivity .class);;
+                mintent.putExtra("bigMake",1);
+                startActivity(mintent);
+                finish();
             }
         });
     }
 }
+
+

@@ -28,12 +28,13 @@
         <activity android:name=".DateActivity" />
         <activity android:name=".BookOrderActivity" />
         <activity android:name=".YueChe_Activity" />
-        <activity android:name=".FindPasswordActivity" />
         <activity android:name=".SureOrderActivity" />
         <activity android:name=".PayActivity" />
         <activity android:name=".PayCompleteActivity" />
         <activity android:name=".SelectPeopleActivity" />
-        <activity android:name=".AddPeopleActivity"></activity>
+        <activity android:name=".AddPeopleActivity" />
+        <activity android:name=".ShowBigFragmentActivity"
+            android:theme="@style/DefaultCityPickerTheme"></activity>
     </application>
 
 </manifest>

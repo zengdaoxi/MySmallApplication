@@ -1,10 +1,18 @@
 package com.example.mysmallapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
+import android.util.Log;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.RelativeLayout;
+
+import static android.app.ProgressDialog.show;
 
 
 public class MainPageActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener, ViewPager.OnPageChangeListener {
@@ -15,7 +23,7 @@ public class MainPageActivity extends AppCompatActivity implements RadioGroup.On
     private RadioButton rb_setting;
     private ViewPager vpager;
     private MyFragmentPagerAdapter mAdapter;
-
+    private RelativeLayout frament_contant;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +34,9 @@ public class MainPageActivity extends AppCompatActivity implements RadioGroup.On
         rb_channel.setChecked(true);
     }
 
-       private void bindViews() {
+
+
+    private void bindViews() {
         rg_tab_bar = findViewById(R.id.rg_tab_bar);
         rb_channel = findViewById(R.id.rb_channel);
         rb_message = findViewById(R.id.rb_message);

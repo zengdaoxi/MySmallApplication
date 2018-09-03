@@ -68,6 +68,7 @@ public class SelectPeopleActivity extends AppCompatActivity {
 
                 if(viewCache.cb.isChecked()){//被选中状态
                     listStr.add(list.get(position).get("name").toString());
+
                 }else//从选中状态转化为未选中
                 {
                     listStr.remove(list.get(position).get("name").toString());
@@ -86,8 +87,6 @@ public class SelectPeopleActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = getIntent();
-                intent.putExtra("people", (Serializable) listStr);
-                setResult(RESULT_OK,intent);
             }
         });
 

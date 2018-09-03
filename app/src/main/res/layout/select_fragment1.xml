@@ -97,9 +97,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:text="2018-7-3"
+                android:text="2018-9-3"
                 android:textColor="#040404"
                 android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/selectWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="星期一"
+                android:textColor="#040404"
+                android:textSize="15sp" />
+
 
         </LinearLayout>
 
@@ -168,18 +178,18 @@
             <ImageView
                 android:id="@+id/addPeople"
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:layout_marginLeft="15dp"
                 android:src ="@drawable/add"/>
 
             <TextView
                 android:id="@+id/addPeo"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:layout_marginLeft="5dp"
                 android:gravity="center_vertical"
                 android:text="添加乘客"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="#e5bb4a" />
         </LinearLayout>
 

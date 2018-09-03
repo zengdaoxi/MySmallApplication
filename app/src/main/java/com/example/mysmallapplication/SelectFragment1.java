@@ -2,6 +2,7 @@ package com.example.mysmallapplication;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.DatePickerDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +17,7 @@ import android.view.animation.Animation;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,11 +30,13 @@ import com.zaaach.citypicker.model.LocateState;
 import com.zaaach.citypicker.model.LocatedCity;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class SelectFragment1 extends Fragment {
 
-    private TextView selectDate;
+    private TextView selectDate,selectWeek;
+    private DatePickerDialog.OnDateSetListener onDateSetListener;
     private ImageView change,addPeople;
     private TextView fromcity,tocity;
     private TextView selectTime,loctype,addPeo;
@@ -40,6 +44,8 @@ public class SelectFragment1 extends Fragment {
     String strFrom;
     String strTo;
     private int picwhich = 0;
+    private int Year,Month,data;
+    private String str;
 
     public SelectFragment1() {
     }
@@ -48,6 +54,7 @@ public class SelectFragment1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.select_fragment1, container, false);
         selectDate = view.findViewById(R.id.selectDate);
+        selectWeek = view.findViewById(R.id.selectWeek);
         change = view.findViewById(R.id.change);
         fromcity = view.findViewById(R.id.from);
         tocity = view.findViewById(R.id.to);
@@ -91,7 +98,7 @@ public class SelectFragment1 extends Fragment {
                         strFrom = fromcity.getText().toString();
                         strTo = tocity.getText().toString();
 
-                        TranslateAnimation animationfrom = new TranslateAnimation(0, 300, 0, 0);
+                        TranslateAnimation animationfrom = new TranslateAnimation(0, 270, 0, 0);
                         animationfrom.setDuration(600);
                         animationfrom.setInterpolator(new AccelerateDecelerateInterpolator());
                         animationfrom.setAnimationListener(new Animation.AnimationListener() {
@@ -205,7 +212,7 @@ public class SelectFragment1 extends Fragment {
                 CityPicker.getInstance()
                         .setFragmentManager(getChildFragmentManager())
                         .setLocatedCity(new LocatedCity("杭州", "浙江", "101210101"))
-                        .setHotCities(hotCities)	//指定热门城市
+                        .setHotCities(hotCities)//指定热门城市
                         .setOnPickListener(new OnPickListener() {
                             @Override
                             public void onPick(int position, City data) {
@@ -249,7 +256,9 @@ public class SelectFragment1 extends Fragment {
                         .setOnPickListener(new OnPickListener() {
                             @Override
                             public void onPick(int position, City data) {
-                                tocity.setText(data.getName());
+                                if(data!=null) {
+                                    tocity.setText(data.getName());
+                                }
                             }
 
                             @Override
@@ -270,19 +279,86 @@ public class SelectFragment1 extends Fragment {
             }
         });
 
-        selectDate.setOnClickListener(new View.OnClickListener() {
+/*        selectDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(),DateActivity.class);
                 startActivityForResult(intent,RequestCodeInfo.DATE);
             }
+        });*/
+
+        Calendar ca = Calendar.getInstance();
+        final Calendar temp = Calendar.getInstance();
+        Year = ca.get(Calendar.YEAR);
+        Month = ca.get(Calendar.MONTH);
+        data = ca.get(Calendar.DAY_OF_MONTH);
+
+        selectDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new DatePickerDialog(getActivity(), onDateSetListener,Year,Month,data).show();
+            }
         });
+        onDateSetListener = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                if (year >= Year && month >= month && dayOfMonth >= data) {
+                Year = year;
+                Month = month;
+                data = dayOfMonth;
+                StringBuffer days;
+                if ((Month + 1) < 10) {
+                    if (data < 10) {
+                        days = new StringBuffer().append(Year).append("-").append(0).append(Month + 1).append("-").append(0).append(data).append(" ");
+                    } else {
+                        days = new StringBuffer().append(Year).append("-").append(0).append(Month + 1).append("-").append(data).append(" ");
+                    }
+
+                } else {
+                    if (data < 10) {
+                        days = new StringBuffer().append(Year).append("-").append(Month + 1).append("-").append(0).append(data).append(" ");
+                    } else {
+                        days = new StringBuffer().append(Year).append("-").append(Month + 1).append("-").append(data).append(" ");
+                    }
+                }
+                temp.set(year, month, dayOfMonth);
+                int weekday = temp.get(Calendar.DAY_OF_WEEK);
+                switch (weekday) {
+                    case 1:
+                        str = "星期天";
+                        break;
+                    case 2:
+                        str = "星期一";
+                        break;
+                    case 3:
+                        str = "星期二";
+                        break;
+                    case 4:
+                        str = "星期三";
+                        break;
+                    case 5:
+                        str = "星期四";
+                        break;
+                    case 6:
+                        str = "星期五";
+                        break;
+                    case 7:
+                        str = "星期六";
+                        break;
+                    default:
+                        break;
+                }
+                selectDate.setText(days);
+                selectWeek.setText(str);
+            }
+        }
+        };
 
         return view;
     }
 
 
-    @Override
+/*    @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == Activity.RESULT_OK) {
@@ -295,6 +371,6 @@ public class SelectFragment1 extends Fragment {
                     break;
             }
         }
-    }
+    }*/
 
 }

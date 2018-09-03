@@ -51,7 +51,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="380dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="25dp"
@@ -76,7 +76,7 @@
             android:layout_marginLeft="15dp"
             android:text="G809"
             android:textColor="#57a4f4"
-            android:textSize="30dp"
+            android:textSize="25dp"
            />
 
         <LinearLayout
@@ -95,7 +95,7 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/StartTime"
+                android:id="@+id/startTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="2018-8-30"
@@ -121,24 +121,24 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/time2"
+                android:id="@+id/durationtime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="5小时48分钟"
                 android:textColor="#57a4f4"
-                android:textSize="15sp"/>
+                android:textSize="15sp" />
         </LinearLayout>
     </LinearLayout>
 
 
-        <View
+
+        <LinearLayout
             android:layout_width="350dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="35dp"
             android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/xuxian"
-            android:layerType="software"/>
+            android:background="@android:color/darker_gray" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -163,7 +163,7 @@
                 android:layout_height="wrap_content"
                 android:text="成都"
                 android:textColor="#000111"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/tvStartTime"
@@ -201,7 +201,7 @@
                 android:layout_height="wrap_content"
                 android:text="杭州"
                 android:textColor="#000111"
-                android:textSize="25sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/tvEndTime"
@@ -212,16 +212,15 @@
         </LinearLayout>
 </LinearLayout>
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:orientation="horizontal">
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
                 android:layout_weight="1"
-                android:gravity="center_horizontal"
                 android:orientation="vertical"
 
                 >
@@ -230,78 +229,75 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="￥1122"
-                    android:textSize="15sp"/>
+                    android:textSize="12sp"/>
                 <TextView
                     android:id="@+id/shangwu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="商务:5张"
-                    android:textSize="15sp" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
                 android:layout_weight="1"
-                android:gravity="center_horizontal"
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/mon1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="￥1132"
-                    android:textSize="15sp"/>
+                    android:textSize="12sp"/>
+
                 <TextView
-                    android:id="@+id/shangwu1"
+                    android:id="@+id/yideng"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="一等：无"
-                    android:textSize="15sp" />
+                    android:text="一等:无"
+                    android:textSize="12sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
                 android:layout_weight="1"
-                android:gravity="center_horizontal"
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/mon2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="￥1122"
-                    android:textSize="15sp"/>
+                    android:textSize="12sp"/>
+
                 <TextView
-                    android:id="@+id/shangwu2"
+                    android:id="@+id/erdeng"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="二等：无"
-                    android:textSize="15sp" />
+                    android:text="二等:无"
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
                 android:layout_weight="1"
-                android:gravity="center_horizontal"
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/mon3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="￥1102"
-                    android:textSize="15sp"/>
+                    android:textSize="12sp"/>
+
                 <TextView
-                    android:id="@+id/shangwu3"
+                    android:id="@+id/wuzuo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="无座：有"
-                    android:textSize="15sp" />
+                    android:text="无座:有"
+                    android:textSize="12sp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -315,16 +311,40 @@
             android:layout_gravity="center_horizontal"
             android:background="@android:color/darker_gray" />
 
-        <TextView
-            android:id="@+id/People"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:gravity="center_vertical"
-            android:text="曾道喜  510112*******2342  成人票"
-            android:textSize="15sp"
-            />
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:text="曾道喜"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/Num"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:text="510112*******098"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:text="成人票"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+
+
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -335,18 +355,18 @@
             <ImageView
                 android:id="@+id/addPeople"
                 android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:layout_marginLeft="15dp"
                 android:src ="@drawable/add"/>
 
             <TextView
                 android:id="@+id/addPeo"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:layout_marginLeft="5dp"
                 android:gravity="center_vertical"
                 android:text="添加乘客"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="#e5bb4a" />
         </LinearLayout>
     </LinearLayout>
@@ -363,6 +383,6 @@
         android:paddingLeft="15dp"
         android:text="提交订单"
         android:textColor="#57a4f4"
-        android:textSize="20dp" />
+        android:textSize="16dp" />
 </LinearLayout>
 </LinearLayout>
