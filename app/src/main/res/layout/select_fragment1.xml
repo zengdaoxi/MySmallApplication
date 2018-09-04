@@ -108,7 +108,7 @@
                 android:layout_marginLeft="10dp"
                 android:text="星期一"
                 android:textColor="#040404"
-                android:textSize="15sp" />
+                android:textSize="12sp" />
 
 
         </LinearLayout>

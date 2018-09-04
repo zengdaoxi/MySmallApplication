@@ -25,7 +25,6 @@
         <activity
             android:name=".MainPageActivity"
             android:theme="@style/DefaultCityPickerTheme" />
-        <activity android:name=".DateActivity" />
         <activity android:name=".BookOrderActivity" />
         <activity android:name=".YueChe_Activity" />
         <activity android:name=".SureOrderActivity" />

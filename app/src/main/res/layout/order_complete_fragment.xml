@@ -28,7 +28,7 @@
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="240dp"
+        android:layout_marginLeft="220dp"
         android:layout_gravity="center"
         android:src="@drawable/right"
         android:padding="15dp"/>
@@ -36,8 +36,9 @@
 
     <View
         android:id="@+id/div_tab_bar1"
-        android:layout_width="match_parent"
+        android:layout_width="340dp"
         android:layout_height="2px"
+        android:layout_gravity="center_horizontal"
         android:layout_above="@id/rg_tab_bar"
         android:background="@android:color/darker_gray"/>
 
@@ -62,7 +63,7 @@
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="225dp"
+            android:layout_marginLeft="205dp"
             android:layout_gravity="center"
             android:src="@drawable/right"
             android:padding="15dp"/>
@@ -70,9 +71,10 @@
     </LinearLayout>
 
     <View
-        android:id="@+id/div_tab_bar2"
-        android:layout_width="match_parent"
+        android:id="@+id/div_tab_bar3"
+        android:layout_width="340dp"
         android:layout_height="2px"
+        android:layout_gravity="center_horizontal"
         android:layout_above="@id/rg_tab_bar"
         android:background="@android:color/darker_gray"/>
 
@@ -95,7 +97,7 @@
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="240dp"
+            android:layout_marginLeft="220dp"
             android:layout_gravity="center"
             android:src="@drawable/right"
             android:padding="15dp"/>

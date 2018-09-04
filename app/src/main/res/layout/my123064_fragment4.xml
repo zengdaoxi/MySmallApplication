@@ -56,7 +56,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="240dp"
+                        android:layout_marginLeft="220dp"
                         android:layout_marginRight="10dp"
                         android:layout_gravity="center"
                         android:src="@drawable/right"
@@ -87,7 +87,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="240dp"
+                        android:layout_marginLeft="220dp"
                         android:layout_marginRight="10dp"
                         android:layout_gravity="center"
                         android:src="@drawable/right"
@@ -118,7 +118,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="240dp"
+                        android:layout_marginLeft="220dp"
                         android:layout_marginRight="10dp"
                         android:layout_gravity="center"
                         android:src="@drawable/right"
@@ -149,7 +149,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="240dp"
+                        android:layout_marginLeft="220dp"
                         android:layout_marginRight="10dp"
                         android:layout_gravity="center"
                         android:src="@drawable/right"
@@ -188,7 +188,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="240dp"
+                        android:layout_marginLeft="220dp"
                         android:layout_marginRight="10dp"
                         android:layout_gravity="center"
                         android:src="@drawable/right"
@@ -228,7 +228,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="240dp"
+                        android:layout_marginLeft="220dp"
                         android:layout_marginRight="10dp"
                         android:layout_gravity="center"
                         android:src="@drawable/right"
@@ -260,7 +260,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="240dp"
+                        android:layout_marginLeft="220dp"
                         android:layout_marginRight="10dp"
                         android:layout_gravity="center"
                         android:src="@drawable/right"
@@ -294,7 +294,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="240dp"
+                        android:layout_marginLeft="220dp"
                         android:layout_marginRight="10dp"
                         android:layout_gravity="center"
                         android:src="@drawable/right"
@@ -333,7 +333,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="240dp"
+                        android:layout_marginLeft="220dp"
                         android:layout_marginRight="10dp"
                         android:layout_gravity="center"
                         android:src="@drawable/right"
@@ -375,7 +375,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="240dp"
+                        android:layout_marginLeft="220dp"
                         android:layout_marginRight="10dp"
                         android:layout_gravity="center"
                         android:src="@drawable/right"
@@ -406,7 +406,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="240dp"
+                        android:layout_marginLeft="220dp"
                         android:layout_marginRight="10dp"
                         android:layout_gravity="center"
                         android:src="@drawable/right"
@@ -438,7 +438,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="240dp"
+                        android:layout_marginLeft="220dp"
                         android:layout_marginRight="10dp"
                         android:layout_gravity="center"
                         android:src="@drawable/right"
@@ -446,7 +446,7 @@
                 </LinearLayout>
 
                 <View
-                    android:id="@+id/div_tab_bar44"
+                    android:id="@+id/div_tab_bar47"
                     android:layout_width="match_parent"
                     android:layout_height="2px"
                     android:layout_above="@id/rg_tab_bar"

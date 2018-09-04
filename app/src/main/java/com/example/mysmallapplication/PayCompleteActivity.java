@@ -34,7 +34,7 @@ public class PayCompleteActivity extends AppCompatActivity {
         readorder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+
             }
         });
 

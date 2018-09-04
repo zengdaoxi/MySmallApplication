@@ -34,7 +34,7 @@ public class YCityAdapter extends ArrayAdapter {
         View view = LayoutInflater.from(getContext()).inflate(resourceId, null);//实例化一个对象
         TextView cityName = view.findViewById(R.id.tvStartCity);//获取该布局内的文本视图
         TextView cityName2 = view.findViewById(R.id.tvEndCity);//获取该布局内的文本视图
-        TextView tvTrainNum = view.findViewById(R.id.tvTrainNum);//获取该布局内的文本视图
+        TextView tvTrainNum = view.findViewById(R.id.tvTrainNum1);//获取该布局内的文本视图
         TextView tvDuration = view.findViewById(R.id.tvDuration);//获取该布局内的文本视图
         TextView tvStartTime = view.findViewById(R.id.tvStartTime);//获取该布局内的文本视图
         TextView tvEndTime = view.findViewById(R.id.tvEndTime);//获取该布局内的文本视图
